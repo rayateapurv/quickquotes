@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Metaphor Search Results</title>
+</head>
+<body>
+<main id="bg">
+    <div id="header">
+        <h1>Quick Quotes from Metaphor</h1>
+        
+        <!-- Search form -->
+        <form id="search-form">
+            <input type="text" id="query" name="query" placeholder="Enter a book/play/person">
+            <button type="submit" id="subBtn">Search</button>
+        </form>
+    </div>
+
+    <!-- Display search results here -->
+    <ul id="results">
+        <% if (results && results.length > 0) { %>
+            <% results.forEach((result) => { %>
+                <div class="item">
+                    <!-- <h3><%= result.title %></h3> -->
+                    <a href="<%= result.url %>" target="_blank"><%= result.title %></a>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No results found for "<%= query %>".</p>
+        <% } %>
+    </ul>
+</main>
+
+    <!-- <script src="./public/main.js"></script> -->
+</body>
+
+</html>

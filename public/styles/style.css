@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+a {
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  color: #39ff14;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(21, 21, 21);
+  display: flex;
+  align-items: center;
+}
+
+#header {
+  margin: 100px;
+}
+
+#query {
+  width: 300px;
+  height: 30px;
+}
+
+#subBtn {
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  width: 150px;
+  height: 36px;
+  margin-left: 10px;
+  background-color: #39ff14;
+  color: #212121;
+}
+
+#subBtn:hover {
+  background-color: #dadada;
+}
+
+.item {
+  margin-top: 14px;
+  padding: 10px;
+  width: 400px;
+  text-wrap: wrap;
+  border-style: solid;
+  border-color: white;
+}
